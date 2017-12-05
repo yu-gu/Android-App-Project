@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="@drawable/splash_screen2"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:id="@+id/username_register"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/username"
+                />
+        </LinearLayout>
+        <EditText
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:hint="create your user name "
+            android:textColorHint="@color/rice"
+            android:id = "@+id/username_textedit"
+            android:maxLines="1"
+            android:background="@drawable/input_text_1_dark"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:id="@+id/password_input"
+            >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/password"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/password_register_layout"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:hint="create your password "
+            android:textColorHint="@color/rice"
+            android:background="@drawable/input_text_1_dark"
+            android:maxLines="1"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:id="@+id/height_input"
+            >
+
+            <TextView
+                android:id="@+id/heightView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/height"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/height_register_layout"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:hint="enter your height here"
+            android:textColorHint="@color/rice"
+            android:background="@drawable/input_text_1_dark"
+            android:maxLines="1"
+            />
+
+        <TextView
+            android:id="@+id/gender_register_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gender"/>
+
+        <RadioGroup
+            android:id = "@+id/choose_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/rice"
+                android:buttonTint="@color/rice"
+                android:text="male"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/rice"
+                android:textColor="@color/rice"
+                android:text="female"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/birthday_register_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/birthday"/>
+        <DatePicker
+            android:id="@+id/birthday_Picker"
+            android:calendarViewShown="false"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:calendarTextColor="@color/rice"
+            android:background="@color/rice"
+            />
+
+        <Button
+            android:id="@+id/submit_user_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/create_account"
+            />
+    </LinearLayout>
+
+
+</ScrollView>

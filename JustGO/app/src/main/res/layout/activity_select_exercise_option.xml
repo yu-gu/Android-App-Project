@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.moranlee.justgo.activity.activity.exercise_usage.SelectExerciseOption">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/splash_screen2"
+        >
+
+        <Button
+            android:id="@+id/select_from_old_exercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/select_create_new_exercise"
+            android:layout_marginTop="107dp"
+            android:background="@drawable/select_exercise" />
+
+        <Button
+            android:id="@+id/select_create_new_exercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/select_from_old_exercise"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="44dp"
+            android:background="@drawable/creat_exercise" />
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

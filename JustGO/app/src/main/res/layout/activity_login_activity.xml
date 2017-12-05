@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.moranlee.justgo.activity.activity.user_usage.Login">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/splash_screen2">
+
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            app:srcCompat="@drawable/logo1" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_alignStart="@+id/password"
+            android:layout_below="@+id/imageView4"
+            android:background="@drawable/edit_text1"
+            android:hint="UserName"
+            android:inputType="text"
+            android:textColor="@color/aqua"
+            android:maxLines="1"
+            android:textColorHint="@color/white"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/edit_text2"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@color/aqua"
+            android:maxLines="1"
+            android:textColorHint="@color/aqua"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/login0" />
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="-15dp"
+            android:background="@drawable/signup" />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

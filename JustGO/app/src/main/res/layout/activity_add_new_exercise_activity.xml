@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.moranlee.justgo.activity.activity.exercise_usage.AddNewExercise">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="@drawable/splash_screen2"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:id="@+id/add_exercise_category"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/category" />
+        </LinearLayout>
+            <EditText
+                android:id="@+id/edit_add_category"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_text_1_dark"
+                android:hint="category of your exercise"
+                android:textColorHint="@color/white"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_exercise_cate_choice"
+                android:orientation="horizontal"
+                >
+                <RadioButton
+                    android:id="@+id/new_exercise_endurance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="endurance"
+                    android:textColor="@color/white"
+                    android:buttonTint="@color/white"
+                    />
+                <RadioButton
+                    android:id="@+id/new_exercise_strength"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="strength"
+                    android:textColor="@color/white"
+                    android:buttonTint="@color/white"
+                    />
+                <RadioButton
+                    android:id="@+id/new_exercise_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="balance"
+                    android:textColor="@color/white"
+                    android:buttonTint="@color/white"
+                    />
+                <RadioButton
+                    android:id="@+id/new_exercise_flexibility"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="flexibility"
+                    android:textColor="@color/white"
+                    android:buttonTint="@color/white"
+                    />
+
+            </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/add_exercise_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/exercise_name"/>
+        </LinearLayout>
+            <EditText
+                android:id="@+id/edit_exercise_name"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:hint="the name of your exercise"
+                android:textColorHint="@color/white"
+                android:background="@drawable/input_text_1_dark"/>
+
+        <LinearLayout
+            android:id="@+id/calorie_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/calories"/>
+        </LinearLayout>
+            <EditText
+                android:id="@+id/edit_exercise_consumption"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:hint="amount in KJW"
+                android:textColorHint="@color/white"
+                android:background="@drawable/input_text_1_dark"
+                android:inputType="number"
+                />
+
+        <Button
+            android:id="@+id/add_exercise_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/submit_add_data"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

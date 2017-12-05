@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.moranlee.justgo.activity.activity.recommandition_usage.GetRecommendation">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:background="@drawable/splash_screen2"
+        >
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:maxLines="1"
+            android:inputType="number"
+            android:hint="Target Weight"
+            android:id="@+id/target_weight"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/submit_reco"
+            android:layout_below="@id/target_weight"
+            android:text="Submit"
+            />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/submit_reco"
+            android:id="@+id/print_reco_food"
+            android:background="@color/white"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reco_prev"
+            android:text="prev"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/print_reco_food"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reco_next"
+            android:text="next"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/print_reco_food"
+            />
+
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

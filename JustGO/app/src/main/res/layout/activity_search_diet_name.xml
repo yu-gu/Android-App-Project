@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.moranlee.justgo.activity.activity.diet_usage.SearchDietName">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="@color/background"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/food_name"/>
+
+    <EditText
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/object_diet_name"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:maxLines="1"
+        />
+
+    <Button
+        android:id="@+id/submit_to_search_diet_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/submit_search" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

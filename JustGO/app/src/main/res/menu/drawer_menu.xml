@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/food"
+            android:title="food"
+            android:icon="@drawable/ic_food_white_48px"/>
+        <item android:id="@+id/diet"
+            android:title="diet"
+            android:icon="@drawable/ic_diet_white_48px"/>
+        <item android:id="@+id/weight"
+            android:title="weight"
+            android:icon="@drawable/ic_weight_white_48px"/>
+        <item android:id="@+id/exercise"
+            android:title="exercise"
+            android:icon="@drawable/ic_fitness_white_48px"/>
+        <item android:id="@+id/analyize"
+            android:title="analyize"
+            android:icon="@drawable/ic_analyize_white_48px"/>
+        <item android:id="@+id/profile"
+            android:title="profile"
+            android:icon="@drawable/ic_profile_white_48px"/>
+        <item android:id="@+id/recommendation"
+            android:title="recommendation"
+            android:icon="@drawable/ic_recommand_white_48px"/>
+
+    </group>
+
+</menu>
